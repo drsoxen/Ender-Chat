@@ -1,0 +1,17 @@
+﻿<Window x:Class="EnderChat.ConnectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ConnectWindow" Height="300" Width="300" ShowInTaskbar="False">
+    <Grid Width="264">
+        <RadioButton Content="MultiCast" Height="16" HorizontalAlignment="Left" Margin="12,12,0,0" Name="Radio_Multicast" VerticalAlignment="Top" Checked="Radio_Multicast_Checked" />
+        <RadioButton Content="TCPClient" Height="16" HorizontalAlignment="Left" Margin="12,34,0,0" Name="radioButtonRadio_Radio_TCP" VerticalAlignment="Top" Checked="radioButtonRadio_Radio_TCP_Checked" />
+        <Label Content="UserName" Height="28" HorizontalAlignment="Left" Margin="12,90,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Endpoint" Height="28" HorizontalAlignment="Left" Margin="12,120,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Port" Height="28" HorizontalAlignment="Left" Margin="12,150,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="83,92,0,0" Name="textBox_UserName" VerticalAlignment="Top" Width="166" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="83,125,0,0" Name="textBox_Endpoint" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="83,155,0,0" Name="textBox_Port" VerticalAlignment="Top" Width="87" KeyDown="textBox_Port_KeyDown" />
+        <Button Content="Client Connect" Height="45" HorizontalAlignment="Left" Margin="12,204,0,0" Name="button_Connect" VerticalAlignment="Top" Width="110" Click="button_Connect_Click" IsDefault="True" />
+        <Button Content="Start Server" Height="45" HorizontalAlignment="Left" Margin="139,204,0,0" Name="button_StartServer" VerticalAlignment="Top" Width="110" Click="button_StartServer_Click" />
+    </Grid>
+</Window>
